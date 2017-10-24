@@ -16,9 +16,7 @@ if prazo > 0
         dtFim += (prazo/5)*2
     end
 
-    if dtFim.wday == 0
-        dtFim += 1
-    elsif dtFim.wday == 6
+    if dtFim.wday == 0 || dtFim.wday == 6 
         dtFim += 2   
     end
 
